@@ -1,0 +1,77 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Heroes Hub</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Column -->
+        <div class="column-left">
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Marvel_Logo.svg" alt="Marvel Logo">
+            </div>
+            
+            <nav>
+                <button id="menuButton">Navigation ▼</button>
+                <div id="expandedMenu" class="hidden">
+                    <a href="https://www.marvel.com">Marvel Official</a>
+                    <a href="https://www.disney.com">Disney+</a>
+                </div>
+            </nav>
+            
+            <div class="image-container">
+                <img id="changeImage" 
+                     src="images/hulk small.jpg" 
+                     data-hover="images/hulk-big.jpg" 
+                     alt="SHIELD Logo">
+            </div>
+
+            <div class="rating-container">
+                <label for="rating">Rate this webpage:</label>
+                <input type="range" id="rating" min="1" max="5" value="3">
+                <p id="ratingText">Good!</p>
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="column-right">
+            <h1>THE AVENGERS</h1>
+            
+            <div class="character-input">
+                <h2>Who is your favourite member of The Avengers?</h2>
+                <input type="text" id="favoriteChar" placeholder="Enter your choice here">
+                <button onclick="displayFavorite()">Submit</button>
+                <p id="userChoice"></p>
+            </div>
+
+            <div class="game-section">
+                <h2>Play The Game!</h2>
+                <p>Press the button below to view the brief biography of a member of The Avengers.</p>
+                <button id="playButton">Select Random Avenger</button>
+                
+                <div class="character-info">
+                    <div class="info-text">
+                        <h3 id="charName"></h3>
+                        <p id="charAlias"></p>
+                        <p id="charWeapon"></p>
+                        <p id="charActor"></p>
+                    </div>
+                    <img id="charImage" src=""  >
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Marvel Heroes Hub | Created for Educational Purposes</p>
+        <p>Contact: <a href="mailto:marvel.heroes@example.com">marvel.heroes@example.com</a></p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

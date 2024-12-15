@@ -1,0 +1,236 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bangers', cursive;
+    background-image: url('../images/bg-image.webp');
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    padding: 20px;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.column-left {
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 2px solid #ff0000;
+}
+
+.column-right {
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 2px solid #ff0000;
+}
+
+.logo img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Navigation */
+nav {
+    margin-bottom: 20px;
+    height: 200px;
+}
+
+#menuButton {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Bangers', cursive;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+#menuButton:hover {
+
+    background-color: #cc0000;
+    transform: scale(1);
+}
+
+#expandedMenu {
+    margin-top: 10px;
+}
+
+#expandedMenu.hidden {
+    display: none;
+}
+
+#expandedMenu a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    background-color: rgba(255, 0, 0, 0.5);
+    margin-bottom: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+#expandedMenu a:hover {
+    background-color: rgba(255, 0, 0, 0.8);
+    transform: translateX(10px);
+}
+
+/* Image Container */
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-container img {
+    max-width: 200px;
+    transition: all 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+}
+
+/* Rating Section */
+.rating-container {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin: 10px 0;
+    accent-color: #ff0000;
+}
+
+/* Character Input Section */
+.character-input {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    color: #ff0000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 15px;
+    width: 300px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Bangers', cursive;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #cc0000;
+    transform: scale(1.05);
+}
+
+/* Game Section */
+.game-section {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.character-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.character-info img {
+    max-width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+}
+.info-text {
+    text-align: left;
+    flex: 1;
+    padding-right: 20px;
+}
+.info-text h3{
+    font-size: 35px;
+}
+.info-text p{
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+#charImage {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+footer a {
+    color: white;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.character-info {
+    animation: fadeIn 0.5s ease-in;
+}
